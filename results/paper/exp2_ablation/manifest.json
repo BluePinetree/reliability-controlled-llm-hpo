@@ -2,8 +2,8 @@
   "experiment": "exp2_ablation",
   "paper_items": [
     "Table 4",
-    "Figure 3",
-    "Figure 4"
+    "Figure 4",
+    "Figure 5"
   ],
   "config": "configs/paper/exp2_ablation_study.json",
   "source_experiment_dir": "results/exp2_ablation",
@@ -16,8 +16,8 @@
       "sha256": "d52f0c3256f22ecbbb0fbc8a5cec015528179bcc577eb2fddcb6f1f6fae666e4",
       "paper_items": [
         "Table 4",
-        "Figure 3",
-        "Figure 4"
+        "Figure 4",
+        "Figure 5"
       ]
     },
     {
@@ -25,8 +25,8 @@
       "sha256": "c18cb6ba0788a58a06f43c6f5aa014058d4285b5972bee247050cd066946a283",
       "paper_items": [
         "Table 4",
-        "Figure 3",
         "Figure 4",
+        "Figure 5",
         "Appendix C"
       ]
     }

@@ -147,8 +147,8 @@ def main() -> None:
     parser.add_argument("--output-root", type=Path, default=ROOT / "results" / "paper")
     args = parser.parse_args()
 
-    summarize_flat(args.exp1_dir, args.output_root / "exp1_baseline", "exp1_baseline", "CIFAR-100", EXP1_METHODS, ["Table 3", "Figure 2"], "configs/paper/exp1_baseline_comparison.json")
-    summarize_flat(args.exp2_dir, args.output_root / "exp2_ablation", "exp2_ablation", "CIFAR-100", EXP2_METHODS, ["Table 4", "Figure 3", "Figure 4"], "configs/paper/exp2_ablation_study.json")
+    summarize_flat(args.exp1_dir, args.output_root / "exp1_baseline", "exp1_baseline", "CIFAR-100", EXP1_METHODS, ["Table 3", "Figure 3"], "configs/paper/exp1_baseline_comparison.json")
+    summarize_flat(args.exp2_dir, args.output_root / "exp2_ablation", "exp2_ablation", "CIFAR-100", EXP2_METHODS, ["Table 4", "Figure 4", "Figure 5"], "configs/paper/exp2_ablation_study.json")
     summarize_exp3(args.exp3_dir, args.output_root / "exp3_ancillary_stress_test")
 
 

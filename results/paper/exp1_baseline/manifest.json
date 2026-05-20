@@ -2,7 +2,7 @@
   "experiment": "exp1_baseline",
   "paper_items": [
     "Table 3",
-    "Figure 2"
+    "Figure 3"
   ],
   "config": "configs/paper/exp1_baseline_comparison.json",
   "source_experiment_dir": "results/exp1_baseline_retry1",
@@ -15,7 +15,7 @@
       "sha256": "fe773bfbfad1ea04b6c3e2395520dc6af521728077ba618dc30fbc4c279337ee",
       "paper_items": [
         "Table 3",
-        "Figure 2"
+        "Figure 3"
       ]
     },
     {
@@ -23,7 +23,7 @@
       "sha256": "ed444dc7eedd094ea65533ee991105dcb4ac4b75bde254d4b3bcfca2bb45e516",
       "paper_items": [
         "Table 3",
-        "Figure 2",
+        "Figure 3",
         "Appendix C"
       ]
     }

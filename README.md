@@ -184,28 +184,24 @@ results/paper/<experiment>/manifest.json
 | Paper item | Released path |
 |---|---|
 | Figure 1 | [`figures/fig1_method_overview.png`](figures/fig1_method_overview.png) |
-| Table 3, Figure 2 | [`results/paper/exp1_baseline/`](results/paper/exp1_baseline/) |
-| Table 4, Figure 3, Figure 4 | [`results/paper/exp2_ablation/`](results/paper/exp2_ablation/) |
+| Figure 2 | [`figures/fig2_selection_controller.pdf`](figures/fig2_selection_controller.pdf) |
+| Table 3, Figure 3 | [`results/paper/exp1_baseline/`](results/paper/exp1_baseline/) |
+| Table 4, Figure 4, Figure 5 | [`results/paper/exp2_ablation/`](results/paper/exp2_ablation/) |
 | Table 5 | [`results/paper/exp3_ancillary_stress_test/`](results/paper/exp3_ancillary_stress_test/) |
 | Appendix seed-level results | `convergence_by_seed.csv` in each experiment folder |
 
-Figure files are available under [`figures/`](figures/):
+Static figure files are available under [`figures/`](figures/):
 
 - [`figures/fig1_method_overview.png`](figures/fig1_method_overview.png)
-- [`figures/fig2_exp1_bsf_trajectory.pdf`](figures/fig2_exp1_bsf_trajectory.pdf)
-- [`figures/fig3_exp2_bsf_trajectory.pdf`](figures/fig3_exp2_bsf_trajectory.pdf)
-- [`figures/fig4_exp2_component_effect.pdf`](figures/fig4_exp2_component_effect.pdf)
+- [`figures/fig2_selection_controller.pdf`](figures/fig2_selection_controller.pdf)
+- [`figures/fig3_exp1_bsf_trajectory.pdf`](figures/fig3_exp1_bsf_trajectory.pdf)
+- [`figures/fig4_exp2_bsf_trajectory.pdf`](figures/fig4_exp2_bsf_trajectory.pdf)
+- [`figures/fig5_exp2_component_effect.pdf`](figures/fig5_exp2_component_effect.pdf)
 
 Regenerate aggregate result tables from local raw experiment outputs with:
 
 ```bash
 python scripts/summarize_results.py
-```
-
-Regenerate the released manuscript figures with:
-
-```bash
-python scripts/generate_paper_figures.py
 ```
 
 ## Custom Dataset HPO
