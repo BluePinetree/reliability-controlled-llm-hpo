@@ -1,0 +1,20 @@
+services:
+  llm-hpo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: reliability-controlled-llm-hpo:cu118
+    working_dir: /workspace
+    env_file:
+      - .env
+    volumes:
+      - ./data:/workspace/data
+      - ./results/runs:/workspace/results/runs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    command: bash

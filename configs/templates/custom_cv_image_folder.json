@@ -1,0 +1,11 @@
+{
+  "dataset": "custom_image_folder",
+  "data": {
+    "train_dir": "path/to/train",
+    "valid_dir": "path/to/valid",
+    "image_size": 224
+  },
+  "search_space": {
+    "learning_rate": { "type": "float", "scale": "log", "bounds": [1e-5, 1e-2] }
+  }
+}

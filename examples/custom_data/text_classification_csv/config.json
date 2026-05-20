@@ -1,0 +1,22 @@
+{
+  "experiment_name": "custom_text_hpo",
+  "dataset": "custom_text",
+  "domain": "NLP",
+  "task_type": "classification",
+  "seed": 42,
+  "data": {
+    "train_path": "examples/custom_data/text_classification_csv/sample_train.csv",
+    "text_column": "text",
+    "label_column": "label",
+    "valid_fraction": 0.25
+  },
+  "model_name": "distilbert-base-uncased",
+  "max_length": 128,
+  "n_trials": 5,
+  "search_space": {
+    "learning_rate": { "type": "float", "scale": "log", "bounds": [1e-5, 2e-4] },
+    "batch_size": { "type": "categorical", "choices": [8, 16, 32] },
+    "weight_decay": { "type": "float", "scale": "linear", "bounds": [0.0, 0.01] },
+    "epochs": { "type": "int", "scale": "linear", "bounds": [2, 5] }
+  }
+}

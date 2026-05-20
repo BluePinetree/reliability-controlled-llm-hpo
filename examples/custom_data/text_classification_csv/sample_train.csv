@@ -1,0 +1,5 @@
+text,label
+"A compact and useful example.",positive
+"This sample is intentionally small.",neutral
+"The model should validate schema only.",neutral
+"A bad configuration can still fail.",negative

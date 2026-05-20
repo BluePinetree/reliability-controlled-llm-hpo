@@ -1,0 +1,35 @@
+{
+  "experiment": "exp2_ablation",
+  "paper_items": [
+    "Table 4",
+    "Figure 3",
+    "Figure 4"
+  ],
+  "config": "configs/paper/exp2_ablation_study.json",
+  "source_experiment_dir": "results/exp2_ablation",
+  "generated_by_script": "scripts/summarize_results.py",
+  "created_at": "2026-05-20T06:56:48Z",
+  "included_in_paper": true,
+  "files": [
+    {
+      "path": "aggregate_metrics.csv",
+      "sha256": "d52f0c3256f22ecbbb0fbc8a5cec015528179bcc577eb2fddcb6f1f6fae666e4",
+      "paper_items": [
+        "Table 4",
+        "Figure 3",
+        "Figure 4"
+      ]
+    },
+    {
+      "path": "convergence_by_seed.csv",
+      "sha256": "c18cb6ba0788a58a06f43c6f5aa014058d4285b5972bee247050cd066946a283",
+      "paper_items": [
+        "Table 4",
+        "Figure 3",
+        "Figure 4",
+        "Appendix C"
+      ]
+    }
+  ],
+  "notes": "Minimal aggregate and seed-level result files. Raw per-trial dumps, raw LLM logs, checkpoints, calibration state, and episodic memory dumps are intentionally excluded."
+}

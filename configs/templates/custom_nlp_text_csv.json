@@ -1,0 +1,12 @@
+{
+  "dataset": "custom_text",
+  "data": {
+    "train_path": "path/to/train.csv",
+    "valid_path": "path/to/valid.csv",
+    "text_column": "text",
+    "label_column": "label"
+  },
+  "search_space": {
+    "learning_rate": { "type": "float", "scale": "log", "bounds": [1e-5, 2e-4] }
+  }
+}

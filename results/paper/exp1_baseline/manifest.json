@@ -1,0 +1,32 @@
+{
+  "experiment": "exp1_baseline",
+  "paper_items": [
+    "Table 3",
+    "Figure 2"
+  ],
+  "config": "configs/paper/exp1_baseline_comparison.json",
+  "source_experiment_dir": "results/exp1_baseline_retry1",
+  "generated_by_script": "scripts/summarize_results.py",
+  "created_at": "2026-05-20T06:56:47Z",
+  "included_in_paper": true,
+  "files": [
+    {
+      "path": "aggregate_metrics.csv",
+      "sha256": "fe773bfbfad1ea04b6c3e2395520dc6af521728077ba618dc30fbc4c279337ee",
+      "paper_items": [
+        "Table 3",
+        "Figure 2"
+      ]
+    },
+    {
+      "path": "convergence_by_seed.csv",
+      "sha256": "ed444dc7eedd094ea65533ee991105dcb4ac4b75bde254d4b3bcfca2bb45e516",
+      "paper_items": [
+        "Table 3",
+        "Figure 2",
+        "Appendix C"
+      ]
+    }
+  ],
+  "notes": "Minimal aggregate and seed-level result files. Raw per-trial dumps, raw LLM logs, checkpoints, calibration state, and episodic memory dumps are intentionally excluded."
+}

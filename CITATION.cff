@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this pre-publication release artifact, please cite this repository. The preferred paper citation will be updated after a public preprint or final publication becomes available."
+title: "Reliability-Controlled LLM-Guided Hyperparameter Optimization for Low-Budget Mixed Search Spaces"
+type: software
+authors:
+  - family-names: Kim
+    given-names: Yunsu
+  - family-names: Seok
+    given-names: Jongwon
+date-released: 2026-05-20
+license: MIT

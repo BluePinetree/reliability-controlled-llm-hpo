@@ -1,0 +1,29 @@
+{
+  "experiment": "exp3_ancillary_stress_test",
+  "paper_items": [
+    "Table 5"
+  ],
+  "config": "configs/paper/exp3_ancillary_stress_test.json",
+  "source_experiment_dir": "results/exp3_multi_domain",
+  "generated_by_script": "scripts/summarize_results.py",
+  "created_at": "2026-05-20T06:56:48Z",
+  "included_in_paper": true,
+  "files": [
+    {
+      "path": "aggregate_metrics.csv",
+      "sha256": "cc0fe701b535c14e52965db677b7c4c3ae3a1e2bfbf89c853fa2c6a57992cad8",
+      "paper_items": [
+        "Table 5"
+      ]
+    },
+    {
+      "path": "convergence_by_seed.csv",
+      "sha256": "c62fcda0b6c4ae19467f1543225e250b86ed13d7c199f23abcdb3fa45bc27027",
+      "paper_items": [
+        "Table 5",
+        "Appendix C"
+      ]
+    }
+  ],
+  "notes": "Minimal aggregate and seed-level result files. Raw per-trial dumps, raw LLM logs, checkpoints, calibration state, and episodic memory dumps are intentionally excluded."
+}

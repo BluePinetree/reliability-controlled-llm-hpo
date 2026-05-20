@@ -1,0 +1,17 @@
+{
+  "dataset": "custom_tabular",
+  "data": {
+    "train_path": "examples/custom_data/tabular_csv/sample_train.csv",
+    "label_column": "label",
+    "id_columns": ["id"],
+    "valid_fraction": 0.33,
+    "stratify": false
+  },
+  "llm_model": "gpt-5.2",
+  "llm_num_candidates": 5,
+  "llm_temperature": 0.7,
+  "search_space": {
+    "learning_rate": { "type": "float", "scale": "log", "bounds": [1e-5, 1e-2] },
+    "batch_size": { "type": "categorical", "choices": [32, 64] }
+  }
+}

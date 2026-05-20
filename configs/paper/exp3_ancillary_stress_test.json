@@ -1,0 +1,79 @@
+{
+  "experiment_name": "exp3_ancillary_stress_test",
+  "datasets": ["cifar100", "ag_news", "imdb"],
+  "domains": ["CV", "NLP", "NLP"],
+  "method": "LLM+Episodic",
+  "objective_metric": "accuracy",
+  "maximize": true,
+  "noise_model": "sub_gaussian",
+  "budget_T": 30,
+  "llm_model": "gpt-5.2",
+  "llm_num_candidates": 5,
+  "llm_temperature": 0.7,
+  "llm_output_schema_version": "v1",
+  "llm_seed": null,
+  "acq_type": "ucb",
+  "kappa": 2.0,
+  "exploration_schedule": { "type": "constant" },
+  "mix_random_ratio": 0.0,
+  "warm_start_trials": 0,
+  "n_trials": 30,
+  "n_seeds": 3,
+  "use_episodic_search": true,
+  "use_variance_reduction": true,
+  "reset_calibration_state": true,
+  "reset_episodic_memory": true,
+  "enable_confidence_gated_episodic": true,
+  "episodic_gate_min_episodes": 6,
+  "episodic_gate_min_calibration_records": 6,
+  "episodic_gate_min_coverage": 0.50,
+  "episodic_gate_max_coverage": 0.90,
+  "episodic_gate_max_calibration_error": 0.25,
+  "episodic_gate_max_nll": 2.2,
+  "enable_risk_aware_selection": true,
+  "risk_penalty_lambda": 0.50,
+  "param_risk_penalty_weight": 0.12,
+  "enable_fail_safe": true,
+  "fail_safe_patience": 2,
+  "fail_safe_cooldown": 3,
+  "dataset_max_safe_learning_rates": {
+    "ag_news": 0.0002,
+    "imdb": 0.00015
+  },
+  "domain_max_safe_learning_rates": {
+    "NLP": 0.0002
+  },
+  "dataset_risk_high_lr_thresholds": {
+    "ag_news": 0.00015,
+    "imdb": 0.0001
+  },
+  "domain_risk_high_lr_thresholds": {
+    "NLP": 0.00015
+  },
+  "dataset_fail_safe_low_accuracy": {
+    "ag_news": 0.55,
+    "imdb": 0.55,
+    "cifar100": 0.45
+  },
+  "domain_fail_safe_low_accuracy": {
+    "NLP": 0.55,
+    "CV": 0.45
+  },
+  "risk_high_lr_threshold": 0.005,
+  "risk_high_dropout_threshold": 0.35,
+  "risk_high_mix_threshold": 0.80,
+  "risk_high_cutmix_threshold": 0.80,
+  "risk_high_warmup_threshold": 800,
+  "risk_small_batch_threshold": 16,
+  "report_best_at": [1, 3, 5, 10, 20, 30],
+  "report_accuracy_thresholds": [0.50, 0.55, 0.60],
+  "output_dir": "./results/runs/exp3_ancillary_stress_test",
+  "search_space": {
+    "learning_rate": { "type": "float", "scale": "log", "bounds": [1e-5, 0.005] },
+    "batch_size": { "type": "int", "scale": "linear", "bounds": [16, 128] },
+    "weight_decay": { "type": "float", "scale": "linear", "bounds": [0.0, 0.001] },
+    "epochs": { "type": "int", "scale": "linear", "bounds": [10, 40] }
+  }
+}
+
+

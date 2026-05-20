@@ -1,0 +1,10 @@
+.env
+.cache/
+__pycache__/
+*.pyc
+*.pth
+*.jsonl
+wandb/
+logs/
+results/runs/
+data/

@@ -1,0 +1,20 @@
+{
+  "experiment_name": "custom_image_folder_hpo",
+  "dataset": "custom_image_folder",
+  "domain": "CV",
+  "task_type": "classification",
+  "seed": 42,
+  "data": {
+    "train_dir": "my_images/train",
+    "valid_dir": "my_images/valid",
+    "image_size": 224
+  },
+  "model_name": "resnet18",
+  "n_trials": 5,
+  "search_space": {
+    "learning_rate": { "type": "float", "scale": "log", "bounds": [1e-5, 1e-2] },
+    "batch_size": { "type": "categorical", "choices": [16, 32, 64] },
+    "weight_decay": { "type": "float", "scale": "linear", "bounds": [0.0, 0.001] },
+    "epochs": { "type": "int", "scale": "linear", "bounds": [5, 30] }
+  }
+}
