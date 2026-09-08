@@ -340,3 +340,5 @@ This artifact is released under the MIT License. See [`LICENSE`](LICENSE).
 ## Contact
 
 For questions about this release artifact, contact asd8780@gmail.com.
+
+**Claude for Science example:** a separate, non-manuscript demonstrator showing how the same reliability-control principles can be used in a Claude-assisted research workflow. See [the workflow](docs/claude_for_science_workflow.md).

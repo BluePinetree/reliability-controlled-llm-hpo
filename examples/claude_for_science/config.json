@@ -1,0 +1,12 @@
+{
+  "schema_version": "claude-science-offline-v1",
+  "mode": "offline",
+  "seed": 42,
+  "candidate_count": 3,
+  "objective": {"metric": "validation_accuracy", "maximize": true},
+  "search_space": {
+    "learning_rate": {"type": "float", "scale": "log", "bounds": [0.00001, 0.001]},
+    "batch_size": {"type": "int", "bounds": [16, 64]},
+    "optimizer": {"type": "categorical", "choices": ["Adam", "SGD"]}
+  }
+}

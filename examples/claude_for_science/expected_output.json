@@ -1,0 +1,77 @@
+{
+  "schema_version": "claude-science-offline-v1",
+  "scope": "non-manuscript",
+  "demo_type": "proposal-only demo",
+  "proposal_source": "seeded_random_synthetic_fixture",
+  "config_sha256": "cd92ce910a030dbf940e15747efedff3e853f9aa929fa8ff6ed94a6059a218a3",
+  "prompt_schema_version": "PromptBuilder-with-offline-note-v1",
+  "prompt_sha256": "fd597bc4c15f3de6f9578603db49a9a2538a058c8bbd7953bfc55a5ffb27f133",
+  "candidate_schema_basis": "docs/llm_audit_and_prompt_schema.md v1; strict local validation",
+  "seed": 42,
+  "claude_api_calls": 0,
+  "model_identifier": null,
+  "training_executed": false,
+  "measured_metric": null,
+  "predictions_are_synthetic": true,
+  "validation": [
+    {
+      "candidate_id": 1,
+      "accepted": true,
+      "validation_reason": "pass",
+      "candidate": {
+        "params": {
+          "learning_rate": 0.00019004375238737117,
+          "batch_size": 17,
+          "optimizer": "SGD"
+        },
+        "mu": 0.5,
+        "sigma": 0.1
+      }
+    },
+    {
+      "candidate_id": 2,
+      "accepted": true,
+      "validation_reason": "pass",
+      "candidate": {
+        "params": {
+          "learning_rate": 3.088756750799271e-05,
+          "batch_size": 24,
+          "optimizer": "Adam"
+        },
+        "mu": 0.5,
+        "sigma": 0.1
+      }
+    },
+    {
+      "candidate_id": 3,
+      "accepted": true,
+      "validation_reason": "pass",
+      "candidate": {
+        "params": {
+          "learning_rate": 0.00022563110735889096,
+          "batch_size": 50,
+          "optimizer": "Adam"
+        },
+        "mu": 0.5,
+        "sigma": 0.1
+      }
+    },
+    {
+      "candidate_id": 4,
+      "accepted": false,
+      "validation_reason": "out_of_bounds",
+      "candidate": null
+    }
+  ],
+  "calibration_gate": {
+    "passed": false,
+    "reason": "insufficient_records",
+    "record_count": 0
+  },
+  "selection": {
+    "candidate_id": null,
+    "reason": "deferred_pending_measured_history"
+  },
+  "risk_scoring_executed": false,
+  "evidence_verdict": "schema_and_closed_gate_verified_only"
+}
